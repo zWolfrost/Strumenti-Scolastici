@@ -1,0 +1,262 @@
+:root
+{
+   --depth0: #181818;
+   --depth1: #222222;
+   --depth2: #2a2a2a;
+   --reverse: white;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button
+{
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+
+body
+{
+   margin: 0;
+
+   background-color: var(--depth0);
+   color: var(--reverse);
+
+   font-family: system-ui;
+   font-size: 25px;
+
+   text-align: center;
+}
+
+
+
+h1
+{
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+
+.returnbtn
+{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+
+   margin: 20px;
+   width: 70px;
+   height: 70px;
+}
+
+
+
+#peopletext
+{
+   background-color: var(--depth2);
+   color: var(--reverse);
+
+   min-width: 250px;
+
+   padding: 0px 10px 0px 10px;
+
+   font-family: system-ui;
+   font-size: 25px;
+
+   white-space: nowrap;
+
+   border: none;
+   border-radius: 5px;
+   outline: none;
+}
+
+
+#drawbox
+{
+   flex: 1 0;
+}
+
+#settings
+{
+   display: flex;
+   justify-content: space-evenly;
+   gap: 20px;
+
+   text-align: center;
+}
+
+#drawmode
+{
+   background-color: var(--depth2);
+   color: var(--reverse);
+
+   min-width: 225px;
+   flex: 0 0;
+   margin: auto;
+
+   font-family: "system-ui";
+   font-size: 20px;
+   text-align: center;
+
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+#drawrange
+{
+   background-color: var(--depth2);
+
+   min-width: 200px;
+   height: 15px;
+   flex: 1 0;
+   margin: auto;
+}
+#drawcounter
+{
+   min-width: 175px;
+   flex: 0 0;
+   margin: auto;
+}
+#classselection
+{
+   background-color: var(--depth2);
+   color: var(--reverse);
+
+   min-width: 150px;
+   flex: 0 0;
+   margin: auto;
+
+   font-family: system-ui;
+   font-size: 20px;
+   text-align: center;
+
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+#shufflebutton
+{
+   min-width: 150px;
+   flex: 0 0;
+   margin: auto;
+}
+
+
+
+
+#drawtable
+{
+   position: relative;
+   margin: auto;
+
+   color: var(--reverse);
+   border: 2px solid var(--reverse);
+
+   border-collapse: collapse;
+}
+#drawtable th
+{
+   border-bottom: 1px solid var(--reverse);
+   line-height: 50px;
+   padding-bottom: 5px;
+
+   background-color: var(--depth2);
+}
+#drawtable td
+{
+   text-align: center;
+
+   padding: 2px;
+
+   height: 35px;
+   width: 250px;
+
+   border: 1px solid var(--reverse);
+   background-color: var(--depth1);
+}
+#drawtable.countdown,
+#drawtable.countdown td
+{
+   border: none;
+   background-color: transparent;
+   font-size: 200px;
+}
+
+
+
+.inputfield
+{
+   background-color: var(--depth2);
+   color: var(--reverse);
+
+   text-align: center;
+   font-size: 25px;
+
+   padding-top: 4px;
+   width: 100px;
+
+   border: none;
+   border-radius: 5px;
+}
+.flex
+{
+   display: flex;
+   margin: 25px;
+   gap: 25px;
+}
+
+
+
+
+.range
+{
+   appearance: none;
+   -webkit-appearance: none;
+   overflow: hidden;
+
+   border-radius: 15px;
+   box-shadow: inset 0 0 5px #000;
+}
+.range::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   width: 15px;
+   height: 15px;
+
+   border-radius: 50%;
+   background: #444;
+
+   cursor: pointer;
+}
+.range::-webkit-slider-thumb:hover {background: #666;}
+.range::-webkit-slider-thumb:active {background: #999;}
+
+
+
+.button
+{
+   background-color: var(--depth2);
+   color: var(--reverse);
+
+   align-items: center;
+   appearance: none;
+
+   border-radius: 4px;
+   border-width: 0;
+   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #666666 0 -3px 0 inset;
+   box-sizing: border-box;
+
+   cursor: pointer;
+
+   height: 35px;
+
+   padding: 5px 16px 5px 16px;
+
+   text-decoration: none;
+   font-size: 18px;
+}
+.button.main
+{
+   font-size: 30px;
+   font-weight: bold;
+}
+.button:active
+{
+   box-shadow: #666666 0 3px 7px inset;
+}

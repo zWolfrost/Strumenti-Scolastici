@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Sorteggio</title>
+
+      <link rel="stylesheet" href="style.css">
+      <script type="module" src="js/draw.js" defer></script>
+   </head>
+
+   <body>
+      <header>
+         <a href="index.html" class="returnbtn"><img src="https://icon-library.com/images/returns-icon/returns-icon-9.jpg" width="70px"></a>
+         <h1>Sorteggio</h1>
+      </header>
+
+
+      <div class="flex">
+         <textarea id="peopletext" spellcheck="false"></textarea>
+
+         <div id="drawbox">
+            <div id="settings">
+               <select id="drawmode">
+                  <option value="gruppi">Sorteggio Gruppi</option>
+                  <option value="persone">Sorteggio Persone</option>
+               </select>
+               <input id="drawrange" type="range" class="range" value="6"/>
+               <input id="drawcounter" class="inputfield" size="10" readonly>
+               <select id="classselection"></select>
+               <button id="shufflebutton" class="button"><b>Sorteggia</b></button>
+            </div>
+
+            <br>
+
+            <table id="drawtable"></table>
+         </div>
+      </div>
+   </body>
+</html>

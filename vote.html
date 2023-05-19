@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Votazione</title>
+
+      <link rel="stylesheet" href="style.css">
+      <script type="module" src="js/vote.js" defer></script>
+   </head>
+
+   <body>
+      <header>
+         <a href="index.html" class="returnbtn"><img src="https://icon-library.com/images/returns-icon/returns-icon-9.jpg" width="70px"></a>
+         <h1>Votazione</h1>
+      </header>
+
+
+      <p>
+         Lo studente ha acquisito
+         <input id="answercorrect" type="number" class="inputfield">
+         punti su
+         <input id="answerperfect" type="number" class="inputfield">
+      </p>
+      <p>
+         Calcola il voto in scala da
+         <input id="votescalemin" type="number" class="inputfield" value="0">
+         a
+         <input id="votescalemax" type="number" class="inputfield" value="10">
+      </p>
+
+      <p><button id="calculatevotebutton" class="button">Calcola</button></p>
+
+      <p>
+         Il voto calcolato è
+         <input id="calculatevoteoutput" type="number" class="inputfield" readonly>
+         cioè
+         <input id="calculatevoteroundedoutput" class="inputfield" readonly>
+      </p>
+   </body>
+</html>
